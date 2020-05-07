@@ -18,7 +18,6 @@ require (
 	github.com/bugsnag/panicwrap v1.2.0 // indirect
 	github.com/containers/image v0.0.0-00010101000000-000000000000
 	github.com/containers/storage v0.0.0-20190726081758-912de200380a // indirect
-	github.com/coreos/etcd v3.3.15+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/docker/docker v1.4.2-0.20200203170920-46ec8731fbce
@@ -30,6 +29,8 @@ require (
 	github.com/garyburd/redigo v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0
 	github.com/gofrs/uuid v3.2.0+incompatible // indirect
+	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
+	github.com/golang/protobuf v1.4.1 // indirect
 	github.com/gonum/diff v0.0.0-20181124234638-500114f11e71 // indirect
 	github.com/gonum/graph v0.0.0-20170401004347-50b27dea7ebb
 	github.com/gonum/integrate v0.0.0-20181209220457-a422b5c0fdf2 // indirect
@@ -37,6 +38,9 @@ require (
 	github.com/gonum/stat v0.0.0-20181125101827-41a0da705a5b // indirect
 	github.com/google/go-cmp v0.4.0
 	github.com/gorilla/handlers v1.4.2 // indirect
+	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0 // indirect
+	github.com/grpc-ecosystem/grpc-gateway v1.14.4 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0
 	github.com/moby/buildkit v0.0.0-20181107081847-c3a857e3fca0
 	github.com/mtrmac/gpgme v0.1.2 // indirect
@@ -47,27 +51,33 @@ require (
 	github.com/openshift/library-go v0.0.0-20200327125526-163b2f0d6264
 	github.com/operator-framework/operator-registry v1.8.0
 	github.com/pkg/errors v0.9.1
-	github.com/prometheus/client_golang v1.1.0
+	github.com/prometheus/client_golang v1.6.0
 	github.com/russross/blackfriday v1.5.2
-	github.com/spf13/cobra v0.0.6
+	github.com/sirupsen/logrus v1.6.0 // indirect
+	github.com/spf13/cobra v1.0.0
 	github.com/spf13/pflag v1.0.5
+	github.com/tmc/grpc-websocket-proxy v0.0.0-20200427203606-3cfed13b9966 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
 	github.com/xeipuuv/gojsonschema v1.1.0 // indirect
 	github.com/yvasiyarov/go-metrics v0.0.0-20150112132944-c25f46c4b940 // indirect
 	github.com/yvasiyarov/gorelic v0.0.7 // indirect
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
+	go.etcd.io/etcd v0.5.0-alpha.5.0.20200425165423-262c93980547
 	go.opentelemetry.io/otel/exporters/trace/jaeger v0.4.3 // indirect
-	golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
-	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
-	golang.org/x/sys v0.0.0-20200202164722-d101bd2416d5
-	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+	go.uber.org/zap v1.15.0 // indirect
+	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79
+	golang.org/x/net v0.0.0-20200506145744-7e3656a0809f
+	golang.org/x/sys v0.0.0-20200501145240-bc7a7d42d5c3
+	golang.org/x/time v0.0.0-20200416051211-89c76fbcd5d1
+	google.golang.org/genproto v0.0.0-20200507105951-43844f6eee31 // indirect
+	google.golang.org/grpc v1.29.1 // indirect
 	gopkg.in/ldap.v2 v2.5.1
-	k8s.io/api v0.18.0
-	k8s.io/apimachinery v0.18.0
+	k8s.io/api v0.18.2
+	k8s.io/apimachinery v0.18.2
 	k8s.io/apiserver v0.18.0
-	k8s.io/cli-runtime v0.18.0
+	k8s.io/cli-runtime v0.18.2
 	k8s.io/client-go v8.0.0+incompatible
-	k8s.io/component-base v0.18.0
+	k8s.io/component-base v0.18.2
 	k8s.io/klog v1.0.0
 	k8s.io/kubectl v0.18.0
 	k8s.io/kubernetes v1.13.0
@@ -102,7 +112,7 @@ replace (
 	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.18.0
 	k8s.io/kube-proxy => k8s.io/kube-proxy v0.18.0
 	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.18.0
-	k8s.io/kubectl => github.com/damemi/kubectl v0.0.0-20200507192309-d834aba5b2c4
+	k8s.io/kubectl => github.com/damemi/kubectl v0.18.3-0.20200507203736-edefa982fcea
 	k8s.io/kubelet => k8s.io/kubelet v0.18.0
 	k8s.io/kubernetes => github.com/openshift/kubernetes v1.17.0-alpha.0.0.20200318164551-e37bbac80705
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.0
