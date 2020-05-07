@@ -56,6 +56,7 @@ require (
 	github.com/yvasiyarov/go-metrics v0.0.0-20150112132944-c25f46c4b940 // indirect
 	github.com/yvasiyarov/gorelic v0.0.7 // indirect
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
+	go.opentelemetry.io/otel/exporters/trace/jaeger v0.4.3 // indirect
 	golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 	golang.org/x/sys v0.0.0-20200202164722-d101bd2416d5
@@ -101,7 +102,7 @@ replace (
 	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.18.0
 	k8s.io/kube-proxy => k8s.io/kube-proxy v0.18.0
 	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.18.0
-	k8s.io/kubectl => github.com/damemi/kubectl 1.18-tracing
+	k8s.io/kubectl => github.com/damemi/kubectl v0.0.0-20200507192309-d834aba5b2c4
 	k8s.io/kubelet => k8s.io/kubelet v0.18.0
 	k8s.io/kubernetes => github.com/openshift/kubernetes v1.17.0-alpha.0.0.20200318164551-e37bbac80705
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.0
