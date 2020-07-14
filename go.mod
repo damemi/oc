@@ -89,6 +89,7 @@ replace (
 	github.com/openshift/api => github.com/marun/api v0.0.0-20200713164451-1b0732c819e1
 	github.com/openshift/client-go => github.com/marun/client-go v0.0.0-20200713174434-50276f2b3e28
 	github.com/openshift/library-go => github.com/marun/library-go v0.0.0-20200713174657-763004260bb5
+  github.com/openshift/apiserver-library-go => github.com/marun/apiserver-library-go v1.19-pre
 
 	k8s.io/api => k8s.io/api v0.19.0-rc.0
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.0-rc.0
