@@ -21,11 +21,11 @@ require (
 	github.com/coreos/etcd v3.3.15+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/docker/distribution v2.7.1+incompatible
-	github.com/docker/docker v1.4.2-0.20200203170920-46ec8731fbce
+	github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c
 	github.com/docker/go-units v0.4.0
 	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7
 	github.com/elazarl/goproxy v0.0.0-20190911111923-ecfe977594f1
-	github.com/fsnotify/fsnotify v1.4.7
+	github.com/fsnotify/fsnotify v1.4.9
 	github.com/fsouza/go-dockerclient v0.0.0-20171004212419-da3951ba2e9e
 	github.com/garyburd/redigo v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0
@@ -41,15 +41,15 @@ require (
 	github.com/moby/buildkit v0.0.0-20181107081847-c3a857e3fca0
 	github.com/mtrmac/gpgme v0.1.2 // indirect
 	github.com/opencontainers/go-digest v1.0.0-rc1
-	github.com/openshift/api v0.0.0-20200521162313-4090b8d67ad8
+	github.com/openshift/api v0.0.0-20200701144905-de5b010b2b38
 	github.com/openshift/build-machinery-go v0.0.0-20200424080330-082bf86082cc
 	github.com/openshift/client-go v0.0.0-20200521150516-05eb9880269c
 	github.com/openshift/library-go v0.0.0-20200629115313-82f0d09841e8
 	github.com/operator-framework/operator-registry v1.8.0
 	github.com/pkg/errors v0.9.1
-	github.com/prometheus/client_golang v1.1.0
+	github.com/prometheus/client_golang v1.6.0
 	github.com/russross/blackfriday v1.5.2
-	github.com/spf13/cobra v0.0.6
+	github.com/spf13/cobra v1.0.0
 	github.com/spf13/pflag v1.0.5
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
 	github.com/xeipuuv/gojsonschema v1.1.0 // indirect
@@ -57,9 +57,9 @@ require (
 	github.com/yvasiyarov/gorelic v0.0.7 // indirect
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
 	golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
-	golang.org/x/net v0.0.0-20200421231249-e086a090c8fd
-	golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd
-	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
+	golang.org/x/net v0.0.0-20200602114024-627f9648deb9
+	golang.org/x/sys v0.0.0-20200622214017-ed371f2e16b4
+	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
 	gopkg.in/ldap.v2 v2.5.1
 	k8s.io/api v0.19.0-rc.0
 	k8s.io/apimachinery v0.19.0-rc.0
@@ -70,7 +70,7 @@ require (
 	k8s.io/klog v1.0.0
 	k8s.io/kubectl v0.19.0-rc.0
 	k8s.io/kubernetes v1.19.0-rc.0
-	k8s.io/utils v0.0.0-20200324210504-a9aa75ae1b89
+	k8s.io/utils v0.0.0-20200619165400-6e3d28b6ed19
 	rsc.io/letsencrypt v0.0.3 // indirect
 	sigs.k8s.io/yaml v1.2.0
 )
@@ -84,19 +84,19 @@ replace (
 	// d1d5f6476656c6aad457e2a91d3436e66b6f2251 is more suitable since it does not break fsouza/go-clientdocker,
 	// yet provides the same fix.
 	github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191121165722-d1d5f6476656
+	github.com/kubernetes/kubernetes => github.com/marun/kubernetes v0.0.0-20200714041757-9f3e560d2af8
 
-  // Fake bump pins for rc0
-  github.com/openshift/api => github.com/marun/api v1.19-pre
-  github.com/openshift/client-go => github.com/marun/client-go v1.19-pre
-  github.com/openshift/library-go => github.com/marun/library-go v1.19-pre
-  github.com/kubernetes/kubernetes => github.com/marun/kubernetes rebase-1.19
+	// Fake bump pins for rc0
+	github.com/openshift/api => github.com/marun/api v0.0.0-20200713164451-1b0732c819e1
+	github.com/openshift/client-go => github.com/marun/client-go v0.0.0-20200713174434-50276f2b3e28
+	github.com/openshift/library-go => github.com/marun/library-go v0.0.0-20200713174657-763004260bb5
 
 	k8s.io/api => k8s.io/api v0.19.0-rc.0
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.0-rc.0
-	k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery oc-4.6-kubernetes-1.19-rc.0
+	k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery v0.0.0-20200709170343-2a468d8caa46
 	k8s.io/apiserver => k8s.io/apiserver v0.19.0-rc.0
-	k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime oc-4.6-kubernetes-1.19-rc.0
-	k8s.io/client-go => github.com/openshift/kubernetes-client-go oc-4.6-kubernetes-1.19-rc.0
+	k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime v0.0.0-20200713140542-e58cf90b162c
+	k8s.io/client-go => github.com/openshift/kubernetes-client-go v0.0.0-20200713132012-f4a2b2a4a703
 	k8s.io/cloud-provider => k8s.io/cloud-provider v0.19.0-rc.0
 	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.19.0-rc.0
 	k8s.io/code-generator => k8s.io/code-generator v0.19.0-rc.0
@@ -107,9 +107,9 @@ replace (
 	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.19.0-rc.0
 	k8s.io/kube-proxy => k8s.io/kube-proxy v0.19.0-rc.0
 	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.19.0-rc.0
-	k8s.io/kubectl => github.com/openshift/kubernetes-kubectl oc-4.6-kubernetes-1.19-rc.0
+	k8s.io/kubectl => github.com/openshift/kubernetes-kubectl v0.0.0-20200713145517-eb1b4c124153
 	k8s.io/kubelet => k8s.io/kubelet v0.19.0-rc.0
-  //k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
+	//k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.2
 	k8s.io/metrics => k8s.io/metrics v0.19.0-rc.0
 	k8s.io/node-api => k8s.io/node-api v0.19.0-rc.0
