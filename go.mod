@@ -85,6 +85,12 @@ replace (
 	// yet provides the same fix.
 	github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191121165722-d1d5f6476656
 
+  // Fake bump pins for rc0
+  github.com/openshift/api => github.com/marun/api v1.19-pre
+  github.com/openshift/client-go => github.com/marun/client-go v1.19-pre
+  github.com/openshift/library-go => github.com/marun/library-go v1.19-pre
+  github.com/kubernetes/kubernetes => github.com/marun/kubernetes rebase-1.19
+
 	k8s.io/api => k8s.io/api v0.19.0-rc.0
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.0-rc.0
 	k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery oc-4.6-kubernetes-1.19-rc.0
@@ -103,7 +109,7 @@ replace (
 	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.19.0-rc.0
 	k8s.io/kubectl => github.com/openshift/kubernetes-kubectl oc-4.6-kubernetes-1.19-rc.0
 	k8s.io/kubelet => k8s.io/kubelet v0.19.0-rc.0
-	k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
+  //k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.2
 	k8s.io/metrics => k8s.io/metrics v0.19.0-rc.0
 	k8s.io/node-api => k8s.io/node-api v0.19.0-rc.0
