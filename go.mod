@@ -69,7 +69,7 @@ require (
 	k8s.io/component-base v0.19.0-rc.0
 	k8s.io/klog v1.0.0
 	k8s.io/kubectl v0.19.0-rc.0
-	k8s.io/kubernetes v0.19.0-rc.0
+	k8s.io/kubernetes v1.19.0-rc.0
 	k8s.io/utils v0.0.0-20200324210504-a9aa75ae1b89
 	rsc.io/letsencrypt v0.0.3 // indirect
 	sigs.k8s.io/yaml v1.2.0
