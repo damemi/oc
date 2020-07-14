@@ -84,7 +84,6 @@ replace (
 	// d1d5f6476656c6aad457e2a91d3436e66b6f2251 is more suitable since it does not break fsouza/go-clientdocker,
 	// yet provides the same fix.
 	github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191121165722-d1d5f6476656
-	github.com/kubernetes/kubernetes => github.com/marun/kubernetes v0.0.0-20200714041757-9f3e560d2af8
 
 	// Fake bump pins for rc0
 	github.com/openshift/api => github.com/marun/api v0.0.0-20200713164451-1b0732c819e1
@@ -95,7 +94,8 @@ replace (
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.0-rc.0
 	k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery v0.0.0-20200709170343-2a468d8caa46
 	k8s.io/apiserver => k8s.io/apiserver v0.19.0-rc.0
-	k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime v0.0.0-20200713140542-e58cf90b162c
+	//k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime v0.0.0-20200713140542-e58cf90b162c
+  k8s.io/cli-runtime => github.com/damemi/cli-runtime pick-1.19-carrys
 	k8s.io/client-go => github.com/openshift/kubernetes-client-go v0.0.0-20200713132012-f4a2b2a4a703
 	k8s.io/cloud-provider => k8s.io/cloud-provider v0.19.0-rc.0
 	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.19.0-rc.0
@@ -110,6 +110,7 @@ replace (
 	k8s.io/kubectl => github.com/openshift/kubernetes-kubectl v0.0.0-20200713145517-eb1b4c124153
 	k8s.io/kubelet => k8s.io/kubelet v0.19.0-rc.0
 	//k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
+  k8s.io/kubernetes => github.com/marun/kubernetes v0.0.0-20200714041757-9f3e560d2af8
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.2
 	k8s.io/metrics => k8s.io/metrics v0.19.0-rc.0
 	k8s.io/node-api => k8s.io/node-api v0.19.0-rc.0
