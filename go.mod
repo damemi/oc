@@ -19,7 +19,6 @@ require (
 	github.com/bugsnag/panicwrap v1.2.0 // indirect
 	github.com/containers/image v0.0.0-00010101000000-000000000000
 	github.com/containers/storage v0.0.0-20190726081758-912de200380a // indirect
-	github.com/coreos/etcd v3.3.15+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c
@@ -57,6 +56,7 @@ require (
 	github.com/yvasiyarov/go-metrics v0.0.0-20150112132944-c25f46c4b940 // indirect
 	github.com/yvasiyarov/gorelic v0.0.7 // indirect
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
+	go.etcd.io/etcd v0.5.0-alpha.5.0.20200520232829-54ba9589114f
 	golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
 	golang.org/x/net v0.0.0-20200602114024-627f9648deb9
 	golang.org/x/sys v0.0.0-20200622214017-ed371f2e16b4
