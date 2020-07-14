@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 )
 
 // Logger is a simple interface that is roughly equivalent to klog.

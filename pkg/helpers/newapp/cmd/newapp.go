@@ -12,7 +12,7 @@ import (
 
 	docker "github.com/fsouza/go-dockerclient"
 	v1 "k8s.io/api/apps/v1"
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 
 	corev1 "k8s.io/api/core/v1"
 	kerrors "k8s.io/apimachinery/pkg/api/errors"

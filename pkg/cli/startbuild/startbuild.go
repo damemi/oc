@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 
 	s2ifs "github.com/openshift/oc/pkg/helpers/source-to-image/fs"
 	"github.com/openshift/oc/pkg/helpers/source-to-image/tar"

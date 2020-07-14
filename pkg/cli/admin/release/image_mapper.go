@@ -14,7 +14,7 @@ import (
 	"github.com/ghodss/yaml"
 	imageapi "github.com/openshift/api/image/v1"
 	imagereference "github.com/openshift/library-go/pkg/image/reference"
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 )
 
 type Payload struct {

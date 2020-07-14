@@ -21,7 +21,7 @@ import (
 	"github.com/docker/libtrust"
 	"github.com/opencontainers/go-digest"
 	"k8s.io/client-go/rest"
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 
 	"github.com/openshift/library-go/pkg/image/dockerv1client"
 	imagereference "github.com/openshift/library-go/pkg/image/reference"

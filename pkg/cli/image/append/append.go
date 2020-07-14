@@ -14,7 +14,7 @@ import (
 
 	units "github.com/docker/go-units"
 	"github.com/spf13/cobra"
-	"k8s.io/klog"
+	"k8s.io/klog/v2"
 
 	"github.com/docker/distribution"
 	"github.com/docker/distribution/manifest/schema2"
