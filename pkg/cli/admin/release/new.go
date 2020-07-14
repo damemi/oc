@@ -1079,7 +1079,7 @@ func (o *NewOptions) mirrorImages(is *imageapi.ImageStream) error {
 			tag.From.Name = value
 		}
 	}
-	if klog.V(4) {
+	if klog.V(4).Enabled() {
 		data, _ := json.MarshalIndent(is, "", "  ")
 		klog.Infof("Image references updated to:\n%s", string(data))
 	}

@@ -285,7 +285,7 @@ func (o *AppendImageOptions) Run() error {
 			return err
 		}
 	} else {
-		if klog.V(4) {
+		if klog.V(4).Enabled() {
 			configJSON, _ := json.MarshalIndent(base, "", "  ")
 			klog.Infof("input config:\n%s\nlayers: %#v", configJSON, layers)
 		}
@@ -317,7 +317,7 @@ func (o *AppendImageOptions) Run() error {
 		}
 	}
 
-	if klog.V(4) {
+	if klog.V(4).Enabled() {
 		configJSON, _ := json.MarshalIndent(base, "", "  ")
 		klog.Infof("output config:\n%s", configJSON)
 	}

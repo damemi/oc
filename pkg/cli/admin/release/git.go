@@ -196,7 +196,7 @@ func mergeLogForRepo(g gitInterface, repo string, from, to string) ([]MergeCommi
 		}
 	}
 
-	if klog.V(5) {
+	if klog.V(5).Enabled() {
 		klog.Infof("Got commit info:\n%s", strconv.Quote(out))
 	}
 

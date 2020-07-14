@@ -308,7 +308,7 @@ func (v *ReleaseVerifier) Verify(ctx context.Context, releaseDigest string) erro
 	}
 
 	if len(remaining) > 0 {
-		if klog.V(4) {
+		if klog.V(4).Enabled() {
 			for k := range remaining {
 				klog.Infof("Unable to verify %s against keyring %s", releaseDigest, k)
 			}

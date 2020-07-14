@@ -81,11 +81,11 @@ func (d *s3Driver) newObject(server *url.URL, region string, insecure bool, secu
 	awsConfig.WithDisableSSL(insecure)
 
 	switch {
-	case bool(klog.V(10)):
+	case klog.V(10).Enabled():
 		awsConfig.WithLogLevel(aws.LogDebugWithHTTPBody | aws.LogDebugWithRequestErrors | aws.LogDebugWithSigning)
-	case bool(klog.V(8)):
+	case klog.V(8).Enabled():
 		awsConfig.WithLogLevel(aws.LogDebugWithRequestErrors)
-	case bool(klog.V(6)):
+	case klog.V(6).Enabled():
 		awsConfig.WithLogLevel(aws.LogDebug)
 	}
 

@@ -563,7 +563,7 @@ func ReplacementsForImageStream(is *imageapi.ImageStream, allowTags bool, fn fun
 		tag.From.Name = newImage
 	}
 
-	if klog.V(5) {
+	if klog.V(5).Enabled() {
 		for k, v := range replacements {
 			klog.Infof("Mapping %s -> %s", k, v)
 		}

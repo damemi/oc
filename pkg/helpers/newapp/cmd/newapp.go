@@ -1285,7 +1285,7 @@ func (c *AppConfig) removeRedundantTags(objects app.Objects) (app.Objects, error
 func (c *AppConfig) checkCircularReferences(objects app.Objects) error {
 	for i, obj := range objects {
 
-		if klog.V(5) {
+		if klog.V(5).Enabled() {
 			json, _ := json.MarshalIndent(obj, "", "\t")
 			klog.Infof("\n\nCycle check input object %v:\n%v\n", i, string(json))
 		}

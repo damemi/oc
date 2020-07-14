@@ -459,7 +459,7 @@ func (o *ExtractOptions) extractGit(dir string) error {
 			repo := ref.Annotations[annotationBuildSourceLocation]
 			commit := ref.Annotations[annotationBuildSourceCommit]
 			if len(repo) == 0 || len(commit) == 0 {
-				if klog.V(2) {
+				if klog.V(2).Enabled() {
 					klog.Infof("Tag %s has no source info", ref.Name)
 				} else {
 					fmt.Fprintf(o.ErrOut, "warning: Tag %s has no source info\n", ref.Name)
