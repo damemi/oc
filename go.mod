@@ -41,10 +41,10 @@ require (
 	github.com/moby/buildkit v0.0.0-20181107081847-c3a857e3fca0
 	github.com/mtrmac/gpgme v0.1.2 // indirect
 	github.com/opencontainers/go-digest v1.0.0-rc1
-	github.com/openshift/api v0.0.0-20200713203337-b2494ecb17dd
+	github.com/openshift/api master
 	github.com/openshift/build-machinery-go v0.0.0-20200424080330-082bf86082cc
-	github.com/openshift/client-go v0.0.0-20200713174434-50276f2b3e28
-	github.com/openshift/library-go v0.0.0-20200713174657-763004260bb5
+	github.com/openshift/client-go master
+	github.com/openshift/library-go master
 	github.com/operator-framework/operator-registry v1.8.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.6.0
@@ -86,19 +86,13 @@ replace (
 	// yet provides the same fix.
 	github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191121165722-d1d5f6476656
 
-	// Fake bump pins for rc0
-	github.com/openshift/api => github.com/marun/api v0.0.0-20200713164451-1b0732c819e1
-	github.com/openshift/apiserver-library-go => github.com/marun/apiserver-library-go v0.0.0-20200713174845-d025aab64127
-	github.com/openshift/client-go => github.com/marun/client-go v0.0.0-20200713174434-50276f2b3e28
-	github.com/openshift/library-go => github.com/marun/library-go v0.0.0-20200713174657-763004260bb5
+	github.com/openshift/apiserver-library-go => github.com/openshift/apiserver-library-go master
 
 	k8s.io/api => k8s.io/api v0.19.0-rc.0
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.0-rc.0
-	//k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery v0.0.0-20200709170343-2a468d8caa46
-	k8s.io/apimachinery => github.com/damemi/apimachinery v0.19.0-beta.2.0.20200714182049-200cf3164d6c
+	k8s.io/apimachinery => github.com/openshift/kubernetes-apimachinery oc-4.6-kubernetes-1.19-rc.1
 	k8s.io/apiserver => k8s.io/apiserver v0.19.0-rc.0
-	//k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime v0.0.0-20200713140542-e58cf90b162c
-	k8s.io/cli-runtime => github.com/damemi/cli-runtime v0.0.0-20200714180256-85249d1d64a6
+  k8s.io/cli-runtime => github.com/openshift/kubernetes-cli-runtime oc-4.6-kubernetes-1.19-rc.1
 	k8s.io/cloud-provider => k8s.io/cloud-provider v0.19.0-rc.0
 	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.19.0-rc.0
 	k8s.io/code-generator => k8s.io/code-generator v0.19.0-rc.0
@@ -109,11 +103,9 @@ replace (
 	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.19.0-rc.0
 	k8s.io/kube-proxy => k8s.io/kube-proxy v0.19.0-rc.0
 	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.19.0-rc.0
-	//k8s.io/kubectl => github.com/openshift/kubernetes-kubectl v0.0.0-20200713145517-eb1b4c124153
-	k8s.io/kubectl => github.com/damemi/kubectl v0.0.0-20200714183254-d96430d6d70e
+	k8s.io/kubectl => github.com/openshift/kubernetes-kubectl oc-4.6-kubernetes-1.19-rc.1
 	k8s.io/kubelet => k8s.io/kubelet v0.19.0-rc.0
-	//k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.0
-	k8s.io/kubernetes => github.com/marun/kubernetes v0.0.0-20200714041757-9f3e560d2af8
+	k8s.io/kubernetes => github.com/openshift/kubernetes oc-4.6-kubernetes-1.19-rc.1
 	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.18.2
 	k8s.io/metrics => k8s.io/metrics v0.19.0-rc.0
 	k8s.io/node-api => k8s.io/node-api v0.19.0-rc.0
