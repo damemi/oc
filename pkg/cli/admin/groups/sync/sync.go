@@ -417,6 +417,8 @@ func (o *SyncOptions) Run() error {
 			},
 		}
 		for _, item := range openshiftGroups {
+			item.APIVersion = "user.openshift.io/v1"
+			item.Kind = "group"
 			unstructuredItem, err := runtime.DefaultUnstructuredConverter.ToUnstructured(item)
 			if err != nil {
 				return err
